@@ -1,13 +1,22 @@
-# Balanceo web con HAProxy y Apache en Docker
+# ⚖️ Balanceo web con HAProxy y Apache en Docker
 
-Escenario contenerizado para practicar balanceo de carga usando HAProxy como proxy inverso y varios servidores Apache como backends.
+Escenario contenerizado para practicar balanceo de carga usando **HAProxy** como proxy inverso y varios servidores **Apache** como backends.
 
-## Objetivo
+---
+
+## 🎯 Objetivo
 
 El objetivo del proyecto es desplegar un entorno sencillo de balanceo web con Docker Compose, simulando una arquitectura donde HAProxy distribuye el tráfico entre varios servidores Apache.
-Este proyecto permite practicar conceptos básicos de alta disponibilidad, proxy inverso, balanceo de carga y despliegue de servicios web mediante contenedores.
+Este proyecto permite practicar conceptos básicos de:
 
-## Arquitectura
+- Alta disponibilidad.
+- Proxy inverso.
+- Balanceo de carga.
+- Despliegue de servicios web mediante contenedores.
+
+---
+
+## 🏗️ Arquitectura
 
 ```text
 Cliente
@@ -19,7 +28,9 @@ HAProxy
   └── Apache 3
 ```
 
-## Tecnologías utilizadas
+---
+
+## 🛠️ Tecnologías usadas
 
 - Docker
 - Docker Compose
@@ -28,7 +39,9 @@ HAProxy
 - HTML
 - Redes Docker
 
-## Estructura del proyecto
+---
+
+## 📁 Estructura del proyecto
 
 ```text
 .
@@ -41,13 +54,16 @@ HAProxy
 └── README.md
 ```
 
-## Funcionamiento
+---
+
+## 🔎 Funcionamiento
 
 HAProxy recibe las peticiones HTTP y las reparte entre los contenedores Apache disponibles.
-
 Cada servidor Apache actúa como backend, permitiendo comprobar cómo se distribuye el tráfico entre distintos servicios web.
 
-## Ejecución
+---
+
+## ⚙️ Instalación y ejecución
 
 Para levantar el entorno:
 
@@ -73,7 +89,9 @@ Para detener el entorno:
 docker compose down
 ```
 
-## Qué demuestra este proyecto
+---
+
+## ✅ Qué demuestra este proyecto
 
 - Configuración básica de HAProxy.
 - Despliegue de múltiples servidores web con Docker.
@@ -81,15 +99,16 @@ docker compose down
 - Uso de Docker Compose para levantar una arquitectura completa.
 - Comprensión de conceptos de proxy inverso y alta disponibilidad.
 
-## Próximas mejoras
+---
+
+## 📌 Próximas mejoras
 
 - Añadir healthchecks.
 - Añadir métricas básicas de HAProxy.
 - Documentar pruebas de balanceo.
 - Añadir HTTPS.
 - Añadir un diagrama de arquitectura.
-Añadir healthchecks.
-Añadir métricas básicas de HAProxy.
-Documentar pruebas de balanceo.
+- Añadir métricas básicas de HAProxy.
+- Documentar pruebas de balanceo.
 Añadir HTTPS.
 Añadir un diagrama de arquitectura.
